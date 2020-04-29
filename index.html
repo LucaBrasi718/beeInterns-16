@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/input.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/adaptive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="wrapper">
+        <div class="background-container">
+            <header>
+                <div class="header__left-block">
+                    <div class="header__burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="">Models</a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__search-block">
+                    <form action="">
+                        <input type="text" name="search" placeholder="Search for details…">
+                    </form>
+                </div>
+            </header>
+            <main>
+                <div class="banner">
+                    <div class="inner">
+                        <h1>
+                            Honda <i class="db"></i>Sport <i class="db"></i>CRF 450RX 
+                        </h1>
+                        <div class="banner__action">
+                            <div class="action__item action__watch-film">
+                                Watch film
+                            </div>
+                            <div class="action__item action__add-bookmark">
+                                Bookmark for later
+                            </div>
+                        </div>
+                        <div class="banner__description">
+                            <div class="description__row">
+                                <div class="description__item">
+                                    <div class="description__title">Manufactured</div>
+                                    <div class="description__info">Honda</div>
+                                </div>
+                                <div class="description__item">
+                                    <div class="description__title">Production</div>
+                                    <div class="description__info">2019</div>
+                                </div>
+                                <div class="description__item">
+                                    <div class="description__title">Engine</div>
+                                    <div class="description__info">0.45 L PGM-FI</div>
+                                </div>
+                                <div class="description__item">
+                                    <div class="description__title">Reviews</div>
+                                    <div class="description__info">
+                                        <div class="star star_active"></div>
+                                        <div class="star star_active"></div>
+                                        <div class="star star_active"></div>
+                                        <div class="star star_active"></div>
+                                        <div class="star star_disable"></div>
+                                        4.0/5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="offer">
+            <div class="inner">
+                Sign up for our email newsletter and get the latest our company news. Get free trial for 3 month.
+                <form action="/posturl/newsletter/" method="POST" class="offer__form">
+                    <div class="input__block login">
+                        <input type="text" name="name" placeholder="Name" required pattern="[A-Za-z]{2, 30}"/>
+                    </div>
+                    <div class="input__block mail">
+                        <input type="email" name="mail" placeholder="E-Mail" required pattern="(\w.+)@(\w+)\.(\w+)"/>
+                    </div>
+                    <div class="input__block">
+                        <button type="submit">
+                            Get started for free
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="">Cars</a></li>
+                <li><a href="">Motorcycles</a></li>
+                <li><a href="">Engines</a></li>
+                <li><a href="">Water moto technology</a></li>
+            </ul>
+            © 2020, &lt;BeeInterns /&gt;
+        </footer>
+    </div>
+</body>
+</html>
