@@ -2,6 +2,7 @@ input {
     border: 0;
     outline: none;
     background-color: transparent;
+    width: 100%;
 }
 
 button {

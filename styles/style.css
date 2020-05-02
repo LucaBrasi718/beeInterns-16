@@ -58,6 +58,7 @@ a {
 }
 
 header {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -70,11 +71,16 @@ header {
     justify-content: space-between;
 }
 
+.header__logo {
+    display: none;
+}
+
 .header__burger-menu {
     display: flex;
     flex-wrap: wrap;
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .header__burger-menu span {
@@ -101,15 +107,21 @@ nav li {
     position: relative;
     display: none;
     padding: 20px 5px 15px;
+    margin: 0 25px;
 }
 
 nav li a {
     font-size: 15px;
     line-height: 23px;
+    color: #9F9F9F;
 }
 
 nav li.active {
-    display: block;
+    display: flex;
+}
+
+nav li.active a {
+    color: #fff;
 }
 
 nav li.active::after {
@@ -164,28 +176,51 @@ nav li.active::after {
 
 .action__item {
     position: relative;
-    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
 }
 
-.action__item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -10px;
+.action__item i {
+    position: relative;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     box-sizing: border-box;
+    margin-right: 10px;
 }
 
-.action__watch-film::before {
-    background: #F92251 url("../images/icon-play.svg") no-repeat center center;
+.action__watch-film i {
+    background-color: #F92251;
 }
 
-.action__add-bookmark::before {
-    background: transparent url("../images/bookmark.svg") no-repeat center center;
+.action__add-bookmark i {
     border: 2px solid #F92251;
+}
+
+.action__watch-film i::before {
+    content: "";
+    position: absolute;
+    background:url("../images/icon-play.svg") no-repeat;
+    width: 4px;
+    height: 6px;
+    left: 50%;
+    top: 50%;
+    margin-left: -2px;
+    margin-top: -3px;
+}
+
+.action__add-bookmark i::before {
+    content: "";
+    position: absolute;
+    background:url("../images/bookmark.svg") no-repeat;
+    width: 6px;
+    height: 6px;
+    left: 50%;
+    top: 50%;
+    margin-left: -3px;
+    margin-top: -3px;
 }
 
 .banner__description {
@@ -287,6 +322,7 @@ nav li.active::after {
     text-align: center;
     box-sizing: border-box;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* FOOTER STYLES */
