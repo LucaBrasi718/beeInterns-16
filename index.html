@@ -40,7 +40,7 @@
                 </div>
                 <div class="header__search-block">
                     <form action="">
-                        <input type="text" name="search" placeholder="Search for details…">
+                        <input type="search" name="search" placeholder="Search for details…">
                     </form>
                 </div>
             </header>
@@ -52,11 +52,15 @@
                         </h1>
                         <div class="banner__action">
                             <div class="action__item action__watch-film">
-                                <i></i>
+                                <div class="action__icon">
+                                    <img src="./images/icon-play.svg" alt="icon-play">
+                                </div>
                                 Watch film
                             </div>
                             <div class="action__item action__add-bookmark">
-                                <i></i>
+                                <div class="action__icon">
+                                    <img src="./images/bookmark.svg" alt="bookmark">
+                                </div>
                                 Bookmark for later
                             </div>
                         </div>
@@ -96,10 +100,10 @@
                 Sign up for our email newsletter and get the <i></i>latest our company news. <i></i>Get free trial for 3 month.
                 <form action="/posturl/newsletter/" method="POST" class="offer__form">
                     <div class="input__block login">
-                        <input type="text" name="name" placeholder="Name" required pattern="[A-Za-z]{2, 30}"/>
+                        <input type="text" name="name" placeholder="Name" maxlength="30"required pattern="[A-Za-z]{2, 30}"/>
                     </div>
                     <div class="input__block mail">
-                        <input type="email" name="mail" placeholder="E-Mail" required pattern="(\w.+)@(\w+)\.(\w+)"/>
+                        <input type="email" name="mail" placeholder="E-Mail" required/>
                     </div>
                     <div class="input__block">
                         <button type="submit">

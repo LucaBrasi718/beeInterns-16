@@ -99,7 +99,6 @@ header {
 }
 
 nav {
-    padding: 0 20px;
     border-right: 1px solid #A3A3A3;
 }
 
@@ -166,6 +165,10 @@ nav li.active::after {
     line-height: 23px;
 }
 
+.banner .inner {
+    max-width: 980px;
+}
+
 .banner__action {
     margin-top: 20px;
 }
@@ -182,45 +185,34 @@ nav li.active::after {
     cursor: pointer;
 }
 
-.action__item i {
+.action__icon {
     position: relative;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     box-sizing: border-box;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.action__watch-film i {
+.action__watch-film .action__icon {
     background-color: #F92251;
 }
 
-.action__add-bookmark i {
+.action__add-bookmark .action__icon {
     border: 2px solid #F92251;
 }
 
-.action__watch-film i::before {
-    content: "";
-    position: absolute;
-    background:url("../images/icon-play.svg") no-repeat;
+.action__watch-film .action__icon img {
     width: 4px;
     height: 6px;
-    left: 50%;
-    top: 50%;
-    margin-left: -2px;
-    margin-top: -3px;
 }
 
-.action__add-bookmark i::before {
-    content: "";
-    position: absolute;
-    background:url("../images/bookmark.svg") no-repeat;
+.action__add-bookmark .action__icon img {
     width: 6px;
     height: 6px;
-    left: 50%;
-    top: 50%;
-    margin-left: -3px;
-    margin-top: -3px;
 }
 
 .banner__description {
@@ -232,8 +224,12 @@ nav li.active::after {
     flex-direction: column;
 }
 
-.description__item + .description__item {
+.description__item {
     margin-top: 4px;
+}
+
+.description__item:first-child {
+    margin-top: 0;
 }
 
 .description__info {
