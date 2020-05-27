@@ -65,23 +65,16 @@
 
     .description__item {
         margin-top: 0;
-        margin-left: 77px;
-    }
-
-    .description__item:first-child, .description__item:last-child {
-        margin-left: 0;
+        margin-right: 77px;
     }
 
     .description__item {
         width: calc((100% / 3) - (154px / 2));
     }
 
-    .description__item:last-child {
-        width: auto;
-    }
-
     .description__item:nth-child(n + 4) {
         margin-top: 18px;
+        width: 100%;
     }
 
     .offer {
@@ -180,15 +173,13 @@
     }
 
     .description__item {
-        width: calc((100% / 4) - (200px / 3))
-    }
-
-    .description__item + .description__item {
-        margin-left: 50px;
+        width: auto;
+        margin-right: 50px;
     }
 
     .description__item:nth-child(n + 4) {
         margin-top: 0;
+        width: auto;
     }
 
     .offer {
